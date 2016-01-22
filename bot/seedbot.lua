@@ -221,7 +221,7 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {179983320},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
@@ -320,110 +320,91 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
-Commands list :
-
+لیست دستورات :
 !kick [username|id]
-You can also do it by reply
-
+کیک کردن کاربر (حتی با ریپلی)
 !ban [ username|id]
-You can also do it by reply
-
+بن کردن کاربر (حتی با ریپلی)
 !unban [id]
-You can also do it by reply
-
+آن بن کردن کاربر (حتی با ریپلی)
 !who
-Members list
-
+دریافت لیست اعضا
 !modlist
-Moderators list
-
+دریافت لیست مدیران
 !promote [username]
-Promote someone
-
+افزودن مدیر
 !demote [username]
-Demote someone
-
+حذف کردن مدیر
 !kickme
-Will kick user
-
+حذف خودتان از گروه
 !about
-Group description
-
+توضیحات گروه
 !setphoto
-Set and locks group photo
-
+انتخاب و قفل عکس گروه
 !setname [name]
-Set group name
-
+انتخاب نام گروه
 !rules
-Group rules
-
+قوانین گروه
 !id
-return group id or user id
-
+دریافت آی دی گروه یا کاربر
 !help
-
-!lock [member|name|bots|leave]	
-Locks [member|name|bots|leaveing] 
-
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
-
+!lock [member|name|bots]
+قفل اعضا ، ربات و نام گروه
+!unlock [member|name|photo|bots]
+باز کردن قفل اعضا ، ربات و نام گروه
 !set rules <text>
-Set <text> as rules
-
+انتخاب قوانین گروه
 !set about <text>
-Set <text> as about
-
+انتخاب توضیحات گروه
 !settings
-Returns group settings
-
+دریافت تنظیمات گروه
 !newlink
-create/revoke your group link
-
+ساخت / تغییر لینک گروه
 !link
-returns group link
-
+دریافت لینک گروه
 !owner
-returns group owner id
-
+دریافت آی دی مدیر اصلی گروه
 !setowner [id]
-Will set id as owner
-
+انتخاب مدیر اصلی گروه
 !setflood [value]
-Set [value] as flood sensitivity
-
+تغییر حساسیت ضد اسپم
 !stats
-Simple message statistics
-
+دریافت آمار در قالب متن
 !save [value] <text>
-Save <text> as [value]
-
+سیو کردن یک متن
 !get [value]
-Returns text of [value]
-
+دریافت متن سیو شده
 !clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
+پاک کردن قوانین ، مدیران ، اعضا و ...
 !res [username]
-returns user id
+دریافت یوزر آی دی
 "!res @username"
-
 !log
-will return group logs
-
+دریافت گزارشات گروه
 !banlist
-will return group ban list
+دریافت لیست کاربران بن شده
+!echo [متن]
+تکرار متن شما
+!tex2img [متن]
+تبدیل متن به عکس
+!calc معادله ریاضی
+ماشین حساب
+مثال : !calc 1*2
+!tagall
+لیست تمام اعضا گروه
+!google متن
+نتایج جستجو متن در گوگل
+!webshot address
+اسکرین شات از سایت
+fosh bede be name
+فوش دادن به name
+!feedback پیام شما
+فرستادن پیام شما برای ادمین
 
-**U can use both "/" and "!" 
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
+* شما میتوانید از ! و / استفاده کنید. 
+* تنها مدیران میتوانند ربات ادد کنند. 
+* تنها معاونان و مدیران میتوانند 
+جزییات مدیریتی گروه را تغییر دهند.
 
 ]]
   }
